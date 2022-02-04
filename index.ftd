@@ -1,7 +1,8 @@
 -- import: ft
 
 -- ft.site-name: FPM
--- ft.site-icon: static/logo.svg
+-- ft.site-icon: static/ftd-logo-desktop.png
+-- ft.site-icon-mobile: static/ftd-logo-mobile.png
 -- ft.github: https://github.com/fifthtry/fpm-dev-en/
 -- ft.site-url: https://fpm.dev/
 
