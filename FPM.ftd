@@ -1,6 +1,6 @@
 -- import: fpm
 
 -- fpm.package: fifthtry.github.io/Blue-Sapphire-Template
-zip: github.com/fifthtry/Forest-Template/archive/refs/heads/main.zip
+zip: github.com/fifthtry/Blue-Sapphire-Template/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/Blue-Sapphire-Theme as ft
