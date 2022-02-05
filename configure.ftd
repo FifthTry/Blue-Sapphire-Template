@@ -29,7 +29,7 @@ lang: ftd
 
 -- ft.markdown:
 
-Site icon will be shown at top left corner of header, and vertically center to header links.
+Site icon will be shown at top left corner of header section:
 
 -- ft.image:
 src: images/site-logo-info.jpg
@@ -47,7 +47,7 @@ lang: ftd
 
 -- ft.markdown:
 
-Site name will be shown after logo in the header section.
+Site name will be shown after logo in the header section:
 
 -- ft.image:
 src: images/site-name-info.jpg
@@ -80,7 +80,7 @@ lang: ftd
 
 -- ft.markdown:
 
-github link will be shown on right section of header.
+github link will be shown on right section of header:
 
 -- ft.image:
 src: images/github-logo-info.jpg
@@ -90,6 +90,46 @@ width: fill
 
 -- ft.h1: `ft.toc`
 
+This component is used to define table of contents of your book. You need to
+keep proper nesting of the chapters OR sections of your book.
+
+-- ft.code:
+lang: ftd
+
+\- index.html
+  Quickstart
+  - /configure/
+    How to configure this theme
+  - /custom-toc/
+    Creating a Page with Custom TOC
+
+
+-- ft.markdown:
+
+Table Of Contents(TOC) will be shows as sidebar in main content area:
+
+-- ft.image:
+src: images/book-toc-info.jpg
+width: fill
+
 
 -- ft.h1: `ft.header-toc`
 
+This component is used to define links/menu links within header secion.
+
+-- ft.code:
+lang: ftd
+
+\- quickstart/
+  Quickstart
+\- https://github.com/FifthTry/Blue-Sapphire-Template/generate/
+  Use this template
+
+
+-- ft.markdown:
+
+Header links / Menu Links will be shown on the right side of header section:
+
+-- ft.image:
+src: images/menu-links-info.jpg
+width: fill
