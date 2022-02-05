@@ -9,12 +9,12 @@
 $processor$: toc
 
 - index.html
-  Introduction
-- ch00-00-quickstart/
   Quickstart
-- ch00-00-quickstart/
+- #abcd/
+  Quickstart
+- #abcd/
   Getting started
-  - ch00-01-getting-started/
+  - #abcd/
     Deploy 
 
 -- ft.header-toc:
@@ -29,14 +29,211 @@ $processor$: toc
 -- ft.doc-page:
 toc: $ft.toc
 
--- ft.h0: Quickstart
+-- ft.h0: Page Title - Quickstart
 
-The length is how much memory, in bytes, the contents of the String is currently using. The capacity is the total amount of memory, in bytes, that the String has received from the allocator. The difference between length and capacity matters, but not in this context, so for now, it’s fine to ignore the capacity.
-When we assign s1 to s2, the String data is copied, meaning we copy the pointer, the length, and the capacity that are on the stack. We do not copy the data on the heap that the pointer refers to. In other words, the data representation in memory looks like Figure 4-2.
-
--- ftd.image:
-src: static/picture1.jpeg
-width: 600
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum nibh pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. Praesent fringilla venenatis eros. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.
 
 
+-- ft.h1: H1 - Title level 1
 
+`Lorem` ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.
+
+
+-- ft.h2: H2 - Title level 2
+
+Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. 
+
+
+-- ft.h3: H3 - Title level 3
+
+Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. 
+
+
+-- ft.code: ftd file containing data
+lang: ftd
+
+\-- record person:
+name: caption
+location: string
+bio: optional body
+
+\-- person amitu: Amit Upadhyay
+location: Bangalore, India
+
+Amit is the founder and CEO of FifthTry.
+
+He loves to code, and is pursuing his childhood goal of
+becoming a professional starer of the trees.
+
+\-- person list employees:
+
+\-- employees: Ganesh Salunke
+location: Mumbai, India
+
+Ganesh loves to UI.
+
+\-- employees: Arpita Jaiswal
+location: Lucknow, India
+
+
+-- ft.markdown:
+
+A normal paragraph, called as markdown.
+
+Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. 
+
+
+-- ft.code: getting data out of ftd
+lang: rs
+
+#[derive(serde::Deserialize)]
+struct Employee {
+    name: String,
+    location: String,
+    bio: Option<String>
+}
+
+let doc = ftd::p2::Document::from("some/id", source, lib)?;
+let amitu: Employee = doc.get("amitu")?;
+let employees: Vec<Employee> = doc.get("employees")?;
+
+
+-- ft.markdown:
+
+Read about [ftd's data modelling capability](/data-modelling/) in
+detail.
+
+
+-- ft.h1: UI Language
+
+
+-- ft.code: hello world ftd
+lang: ftd
+
+\-- string msg: hello world
+
+\-- ftd.text: $msg
+
+
+-- ft.markdown:
+
+This is a ftd file that defines a variable `msg` and uses it to shows
+"hello world" in the UI using `ftd.text` "component".
+
+----
+
+
+-- string msg: hello world
+
+
+-- ftd.text: $msg
+
+
+-- ft.markdown:
+
+----
+
+Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. 
+
+Let's see a slightly more complex layout:
+
+
+-- ft.code:
+lang: ftd
+
+\-- ftd.column:
+border-width: 1
+width: fill
+id: outer
+
+\-- ftd.row:
+width: fill
+background-color: $ft.neutral-200
+padding: 10
+
+\-- ftd.text: $msg
+width: fill
+
+\-- ftd.row:
+
+\-- ftd.text: $msg
+width: fill
+
+\-- container: outer
+
+\-- ftd.row:
+padding: 10
+border-top: 1
+width: fill
+align: center
+
+\-- ftd.text:
+width: fill
+
+We support **markdown** as well.
+
+
+-- ft.markdown:
+
+Which gets rendered into:
+
+
+-- ftd.column:
+border-width: 1
+width: fill
+id: outer
+margin-bottom: 20
+
+-- ftd.row:
+width: fill
+background-color: $ft.code-bg-light
+background-color if $fpm.dark-mode: $ft.code-bg-dark
+padding: 10
+
+
+-- ftd.text: $msg
+width: fill
+color: $ft.neutral
+font: Lato
+
+
+-- ftd.row:
+width: fill
+
+
+-- ftd.text: $msg
+width: fill
+align: right
+color: $ft.neutral
+font: Lato
+
+
+-- container: outer
+
+
+-- ftd.row:
+padding: 10
+border-top: 1
+width: fill
+
+
+-- ftd.text:
+width: fill
+color: $ft.neutral-800
+color if $fpm.dark-mode: $ft.neutral
+font: Lato
+
+
+We support **markdown** as well.
+
+-- container: foo
+
+
+-- ft.markdown:
+
+Most websites you come across can be created using this (or will be in the future).
+We have a DSL that picks elements from CSS, after simplifying things a little bit.
+
+As a goal we want `ftd` files to be renderable in the browser, as well as in other
+modes, like in Terminal using curses UI, natively on Mobile devices, Emacs,
+rendering from scratch using just C/assembly for low-powered devices and so on.
