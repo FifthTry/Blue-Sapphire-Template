@@ -1,48 +1,9 @@
 -- import: ft
--- import: fpm
-
--- ft.site-name: FPM
--- ft.site-icon: static/ftd-logo-desktop.png
--- ft.github: https://github.com/fifthtry/fpm-dev-en/
--- ft.site-url: https://fpm.dev/
-
--- ft.toc:
-$processor$: toc
-
-- /language/
-  FIRST LEVEL ITEM
-  - /p1-grammar/
-    Second Level Item
-  - /philosophy/
-    Second Level Item
-  - /data-modelling/
-    Second Level Item
-    - /variables/
-      Third Level Item
-- /language/
-  FIRST LEVEL ITEM
-  - /p1-grammar/
-    Second Level Item
-- /language/
-  FIRST LEVEL ITEM
-  - /p1-grammar/
-    Second Level Item
-
--- ft.header-toc:
-$processor$: toc
-
-- quickstart/
-  Quickstart
-- https://github.com/FifthTry/fpm-book/generate/
-  Use this template
+-- import: config
 
 
 -- ft.doc-page:
 toc: $ft.toc
-
--- ftd.column:
-id: foo
-
 
 -- ft.h0: Page Title - Quickstart
 
@@ -191,58 +152,6 @@ We support **markdown** as well.
 -- ft.markdown:
 
 Which gets rendered into:
-
-
--- ftd.column:
-border-width: 1
-width: fill
-id: outer
-margin-bottom: 20
-
--- ftd.row:
-width: fill
-background-color: $ft.code-bg-light
-background-color if $fpm.dark-mode: $ft.code-bg-dark
-padding: 10
-
-
--- ftd.text: $msg
-width: fill
-color: $ft.neutral
-font: Lato
-
-
--- ftd.row:
-width: fill
-
-
--- ftd.text: $msg
-width: fill
-align: right
-color: $ft.neutral
-font: Lato
-
-
--- container: outer
-
-
--- ftd.row:
-padding: 10
-border-top: 1
-width: fill
-
-
--- ftd.text:
-width: fill
-color: $ft.neutral-800
-color if $fpm.dark-mode: $ft.neutral
-font: Lato
-
-
-We support **markdown** as well.
-
-
--- container: foo
 
 
 -- ft.markdown:

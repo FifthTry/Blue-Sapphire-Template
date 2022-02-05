@@ -1,0 +1,39 @@
+-- import: ft
+-- import: config
+
+
+-- ft.doc-page:
+toc: $ft.toc
+
+-- ft.h0: Creating a Page with Custom TOC
+
+First create a new TOC in your `config.ftd` file.
+
+-- ft.code: `config.ftd`
+lang: ftd
+
+\-- ft.toc-item list examples-toc:
+$processor$: toc
+
+- /examples/input/
+  Input
+- /examples/diagram/
+  Architecture Diagram
+
+-- ft.markdown:
+
+Then create a new page, with this as starting point.
+
+-- ft.code:
+lang: ftd
+
+
+\-- import: ft
+\-- import: config
+
+\-- ft.doc-page:
+toc: $config.examples-toc
+
+\-- ft.h0: Page Header
+
+

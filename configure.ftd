@@ -1,0 +1,64 @@
+-- import: ft
+-- import: config
+
+
+-- ft.doc-page:
+toc: $ft.toc
+
+-- ft.h0: How to configure this theme
+
+Create config.ftd file:
+
+-- ft.code:
+lang: ftd
+
+\-- import: ft
+\-- import: fpm
+
+\-- ft.site-icon: images/side-logo.png
+\-- ft.site-name: Your Site Name
+
+-- ft.h1: `ft.site-icon`
+
+Write your site icon into this.
+
+-- ft.code:
+lang: ftd
+
+\-- ft.site-icon: images/site-logo.png
+
+-- ft.markdown:
+
+Site icon will be shown at top left corner of header, and vertically center to header links.
+
+-- ft.image:
+src: images/side-logo-info.jpg
+width: fill
+
+
+-- ft.h1: `ft.site-name`
+
+Write your site name into this.
+
+-- ft.code:
+lang: ftd
+
+\-- ft.site-name: Your Site Name
+
+-- ft.markdown:
+
+Site name will be shown after logo in the header section.
+
+-- ft.image:
+src: images/side-name-info.jpg
+width: fill
+
+
+-- ft.h1: `ft.github`
+
+-- ft.h1: `ft.site-url`
+
+-- ft.h1: `ft.toc`
+
+-- ft.h1: `ft.header-toc`
+

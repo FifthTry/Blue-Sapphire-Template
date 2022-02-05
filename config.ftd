@@ -1,0 +1,26 @@
+-- import: ft
+-- import: fpm
+
+-- ft.site-name: Your Site Name
+-- ft.site-icon: images/site-logo.png
+-- ft.github: https://github.com/fifthtry/fpm-dev-en/
+-- ft.site-url: https://fpm.dev/
+
+-- ft.toc:
+$processor$: toc
+
+- index.html
+  Quickstart
+  - /configure/
+    How to configure this theme
+  - /custom-toc/
+    Creating a Page with Custom TOC
+
+
+-- ft.header-toc:
+$processor$: toc
+
+- quickstart/
+  Quickstart
+- https://github.com/FifthTry/Blue-Sapphire-Template/generate/
+  Use this template
