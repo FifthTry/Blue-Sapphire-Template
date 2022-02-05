@@ -3,8 +3,8 @@
 
 -- ft.site-name: Your Site Name
 -- ft.site-icon: images/site-logo.png
--- ft.github: https://github.com/fifthtry/fpm-dev-en/
--- ft.site-url: https://fpm.dev/
+-- ft.github: https://github.com/fifthtry/Blue-Sapphire-Template/
+-- ft.site-url: fifthtry.github.io/blue-sapphire-template/
 
 -- ft.toc:
 $processor$: toc

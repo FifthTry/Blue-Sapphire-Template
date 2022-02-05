@@ -54,11 +54,42 @@ src: images/site-name-info.jpg
 width: fill
 
 
--- ft.h1: `ft.github`
-
 -- ft.h1: `ft.site-url`
 
+Mention home page/your site/website url here.
+
+-- ft.code:
+lang: ftd
+
+\-- ft.site-url: fifthtry.github.io/blue-sapphire-template/
+
+-- ft.markdown:
+
+If user clicks on logo site-url webpage/homepage will be shown to user.
+
+
+
+-- ft.h1: `ft.github`
+
+Mention github URL here.
+
+-- ft.code:
+lang: ftd
+
+\-- ft.github: https://github.com/fifthtry/Blue-Sapphire-Template/
+
+-- ft.markdown:
+
+github link will be shown on right section of header.
+
+-- ft.image:
+src: images/github-logo-info.jpg
+width: fill
+
+
+
 -- ft.h1: `ft.toc`
+
 
 -- ft.h1: `ft.header-toc`
 
