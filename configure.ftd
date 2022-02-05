@@ -15,7 +15,7 @@ lang: ftd
 \-- import: ft
 \-- import: fpm
 
-\-- ft.site-icon: images/side-logo.png
+\-- ft.site-icon: images/site-logo.png
 \-- ft.site-name: Your Site Name
 
 -- ft.h1: `ft.site-icon`
@@ -32,7 +32,7 @@ lang: ftd
 Site icon will be shown at top left corner of header, and vertically center to header links.
 
 -- ft.image:
-src: images/side-logo-info.jpg
+src: images/site-logo-info.jpg
 width: fill
 
 
@@ -50,7 +50,7 @@ lang: ftd
 Site name will be shown after logo in the header section.
 
 -- ft.image:
-src: images/side-name-info.jpg
+src: images/site-name-info.jpg
 width: fill
 
 
