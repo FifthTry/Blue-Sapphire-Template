@@ -227,7 +227,7 @@ font: Lato
 
 We support **markdown** as well.
 
--- container: foo
+-- container: ftd.main
 
 
 -- ft.markdown:
