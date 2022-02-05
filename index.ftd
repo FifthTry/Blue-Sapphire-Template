@@ -40,6 +40,10 @@ $processor$: toc
 -- ft.doc-page:
 toc: $ft.toc
 
+-- ftd.column:
+id: foo
+
+
 -- ft.h0: Page Title - Quickstart
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum nibh pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. Praesent fringilla venenatis eros. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.
@@ -236,6 +240,9 @@ font: Lato
 
 
 We support **markdown** as well.
+
+
+-- container: foo
 
 
 -- ft.markdown:
