@@ -3,166 +3,199 @@
     <head>
         <meta charset="UTF-8"><base href="/Blue-Sapphire-Template/">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <title>Page Title - Quickstart</title>
+        <title>How to configure this theme</title>
         <script type="ftd" id="ftd-data">{
   "@body@0,0": {
-    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum nibh pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. Praesent fringilla venenatis eros. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.",
+    "value": "Create config.ftd file:",
     "dependencies": {
       "0,0,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
     }
   },
   "@body@0,0,1": {
-    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum nibh pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. Praesent fringilla venenatis eros. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.",
+    "value": "Create config.ftd file:",
     "dependencies": {
       "0,0,0,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@0,1": {
-    "value": "`Lorem` ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.",
+    "value": "-- import: ft\n-- import: fpm\n\n-- ft.site-icon: images/side-logo.png\n-- ft.site-name: Your Site Name",
     "dependencies": {
-      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
-    }
-  },
-  "@body@0,1,1": {
-    "value": "`Lorem` ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.",
-    "dependencies": {
-      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
+      "0,0,0,2,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@0,10": {
-    "value": "This is a ftd file that defines a variable `msg` and uses it to shows\n\"hello world\" in the UI using `ftd.text` \"component\".\n\n----",
+    "value": "",
     "dependencies": {
-      "0,0,0,3,3:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+      "0,0,0,5,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@0,10,1": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,5,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@0,11": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,6,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@0,11,1": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,6,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@0,12": {
-    "value": "----\n\nNam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. \n\nLet's see a slightly more complex layout:",
+    "value": "",
     "dependencies": {
-      "0,0,0,3,5:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+      "0,0,0,7,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@0,12,1": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,7,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@0,13": {
-    "value": "-- ftd.column:\nborder-width: 1\nwidth: fill\nid: outer\n\n-- ftd.row:\nwidth: fill\nbackground-color: $ft.neutral-200\npadding: 10\n\n-- ftd.text: $msg\nwidth: fill\n\n-- ftd.row:\n\n-- ftd.text: $msg\nwidth: fill\n\n-- container: outer\n\n-- ftd.row:\npadding: 10\nborder-top: 1\nwidth: fill\nalign: center\n\n-- ftd.text:\nwidth: fill\n\nWe support **markdown** as well.",
+    "value": "",
     "dependencies": {
-      "0,0,0,3,6,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,3,6,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+      "0,0,0,8,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
     }
   },
-  "@body@0,14": {
-    "value": "Which gets rendered into:",
+  "@body@0,13,1": {
+    "value": "",
     "dependencies": {
-      "0,0,0,3,7:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,15": {
-    "value": "Most websites you come across can be created using this (or will be in the future).\nWe have a DSL that picks elements from CSS, after simplifying things a little bit.\n\nAs a goal we want `ftd` files to be renderable in the browser, as well as in other\nmodes, like in Terminal using curses UI, natively on Mobile devices, Emacs,\nrendering from scratch using just C/assembly for low-powered devices and so on.",
-    "dependencies": {
-      "0,0,0,3,8:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+      "0,0,0,8,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@0,2": {
-    "value": "Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.",
-    "dependencies": {
-      "0,0,0,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
-    }
-  },
-  "@body@0,2,1": {
-    "value": "Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.",
-    "dependencies": {
-      "0,0,0,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,3": {
-    "value": "Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.",
-    "dependencies": {
-      "0,0,0,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
-    }
-  },
-  "@body@0,3,1": {
-    "value": "Nam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.",
-    "dependencies": {
-      "0,0,0,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,4": {
-    "value": "-- record person:\nname: caption\nlocation: string\nbio: optional body\n\n-- person amitu: Amit Upadhyay\nlocation: Bangalore, India\n\nAmit is the founder and CEO of FifthTry.\n\nHe loves to code, and is pursuing his childhood goal of\nbecoming a professional starer of the trees.\n\n-- person list employees:\n\n-- employees: Ganesh Salunke\nlocation: Mumbai, India\n\nGanesh loves to UI.\n\n-- employees: Arpita Jaiswal\nlocation: Lucknow, India",
-    "dependencies": {
-      "0,0,0,2,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,2,2,2,2,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,5": {
-    "value": "A normal paragraph, called as markdown.\n\nNam ullamcorper ligula sit amet ligula pretium, nec fermentum `nibh` pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.",
-    "dependencies": {
-      "0,0,0,2,2,2,3:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,6": {
-    "value": "#[derive(serde::Deserialize)]\nstruct Employee {\n    name: String,\n    location: String,\n    bio: Option<String>\n}\n\nlet doc = ftd::p2::Document::from(\"some/id\", source, lib)?;\nlet amitu: Employee = doc.get(\"amitu\")?;\nlet employees: Vec<Employee> = doc.get(\"employees\")?;",
-    "dependencies": {
-      "0,0,0,2,2,2,4,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,2,2,2,4,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,7": {
-    "value": "Read about [ftd's data modelling capability](/data-modelling/) in\ndetail.",
-    "dependencies": {
-      "0,0,0,2,2,2,5:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@body@0,8": {
-    "value": "",
+    "value": "Write your site icon into this.",
     "dependencies": {
       "0,0,0,3,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
     }
   },
-  "@body@0,8,1": {
-    "value": "",
+  "@body@0,2,1": {
+    "value": "Write your site icon into this.",
     "dependencies": {
       "0,0,0,3,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
-  "@body@0,9": {
-    "value": "-- string msg: hello world\n\n-- ftd.text: $msg",
+  "@body@0,3": {
+    "value": "-- ft.site-icon: images/site-logo.png",
     "dependencies": {
       "0,0,0,3,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
       "0,0,0,3,2,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
-  "@caption@0,13": {
+  "@body@0,4": {
+    "value": "Site icon will be shown at top left corner of header, and vertically center to header links.",
+    "dependencies": {
+      "0,0,0,3,3:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@0,5": {
     "value": "",
     "dependencies": {
-      "0,0,0,3,6,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,3,6,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
-      "0,0,0,3,6,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
+      "0,0,0,3,4,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
     }
   },
-  "@caption@0,4": {
-    "value": "ftd file containing data",
+  "@body@0,5,2": {
+    "value": "",
     "dependencies": {
-      "0,0,0,2,2,2,2,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,2,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
-      "0,0,0,2,2,2,2,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
+      "0,0,0,3,4,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
-  "@caption@0,6": {
-    "value": "getting data out of ftd",
+  "@body@0,6": {
+    "value": "Write your site name into this.",
     "dependencies": {
-      "0,0,0,2,2,2,4,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
-      "0,0,0,2,2,2,4,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
-      "0,0,0,2,2,2,4,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
+      "0,0,0,4,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
     }
   },
-  "@caption@0,9": {
-    "value": "hello world ftd",
+  "@body@0,6,1": {
+    "value": "Write your site name into this.",
+    "dependencies": {
+      "0,0,0,4,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@0,7": {
+    "value": "-- ft.site-name: Your Site Name",
+    "dependencies": {
+      "0,0,0,4,2,1:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
+      "0,0,0,4,2,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@0,8": {
+    "value": "Site name will be shown after logo in the header section.",
+    "dependencies": {
+      "0,0,0,4,3:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@0,9": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,4,4,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@0,9,2": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,4,4,2:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@caption@0,1": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,2,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
+      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
+      "0,0,0,2,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@caption@0,3": {
+    "value": "",
     "dependencies": {
       "0,0,0,3,2,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
       "0,0,0,3,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
       "0,0,0,3,2,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
     }
   },
+  "@caption@0,5": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,3,4,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@caption@0,7": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,4,2,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
+      "0,0,0,4,2,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
+      "0,0,0,4,2,2:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@caption@0,9": {
+    "value": "",
+    "dependencies": {
+      "0,0,0,4,4,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@src@0,5": {
+    "value": "images/side-logo-info.jpg",
+    "dependencies": {
+      "0,0,0,3,4,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@src@0,9": {
+    "value": "images/side-name-info.jpg",
+    "dependencies": {
+      "0,0,0,4,4,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
   "@title@0,0": {
-    "value": "Page Title - Quickstart",
+    "value": "How to configure this theme",
     "dependencies": {
       "0,0,0,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
@@ -173,34 +206,46 @@
       "0,0,0,0,0,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
-  "@title@0,1": {
-    "value": "H1 - Title level 1",
-    "dependencies": {
-      "0,0,0,2,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
   "@title@0,1,2,0,1,1": {
     "value": "Your Site Name",
     "dependencies": {
       "0,1,2,0,1,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
+  "@title@0,10": {
+    "value": "`ft.github`",
+    "dependencies": {
+      "0,0,0,5,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@title@0,11": {
+    "value": "`ft.site-url`",
+    "dependencies": {
+      "0,0,0,6,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@title@0,12": {
+    "value": "`ft.toc`",
+    "dependencies": {
+      "0,0,0,7,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@title@0,13": {
+    "value": "`ft.header-toc`",
+    "dependencies": {
+      "0,0,0,8,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
   "@title@0,2": {
-    "value": "H2 - Title level 2",
-    "dependencies": {
-      "0,0,0,2,2,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@title@0,3": {
-    "value": "H3 - Title level 3",
-    "dependencies": {
-      "0,0,0,2,2,2,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
-    }
-  },
-  "@title@0,8": {
-    "value": "UI Language",
+    "value": "`ft.site-icon`",
     "dependencies": {
       "0,0,0,3,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@title@0,6": {
+    "value": "`ft.site-name`",
+    "dependencies": {
+      "0,0,0,4,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "fpm#dark-mode": {
@@ -218,22 +263,9 @@
       "0,0,0,1,0,4": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,1,0,5": "[{\"dependency_type\":\"Visible\",\"condition\":\"true\",\"parameters\":{}}]",
       "0,0,0,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,2,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false},\"default\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,2,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,3:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,4,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false},\"default\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,4,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,4,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,2,2,2,5:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,2,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false},\"default\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false}}}}]",
+      "0,0,0,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
+      "0,0,0,2,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
       "0,0,0,3,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
       "0,0,0,3,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
       "0,0,0,3,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
@@ -241,12 +273,29 @@
       "0,0,0,3,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
       "0,0,0,3,2,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
       "0,0,0,3,3:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,3,5:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,3,6,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false},\"default\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false}}}}]",
-      "0,0,0,3,6,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,3,6,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
-      "0,0,0,3,7:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
-      "0,0,0,3,8:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,3,4,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,3,4,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,2,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false},\"default\":{\"value\":\"rgba(58,64,78,1)\",\"important\":false}}}}]",
+      "0,0,0,4,2,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
+      "0,0,0,4,2,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false},\"default\":{\"value\":\"rgba(43,48,59,1)\",\"important\":false}}}}]",
+      "0,0,0,4,3:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,4,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,4,4,2:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,5,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,5,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,5,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,6,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,6,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,6,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,7,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,7,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,7,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,8,0,1,0:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,8,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(246,247,251,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
+      "0,0,0,8,1:main-container-external:0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
       "0,0,1,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(0,0,0,0)\",\"important\":false},\"default\":{\"value\":\"rgba(0,0,0,0)\",\"important\":false}}}}]",
       "0,0,1,1,0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
       "0,0,1,1,0,1,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(237,237,237,1)\",\"important\":false},\"default\":{\"value\":\"rgba(10,26,31,1)\",\"important\":false}}}}]",
@@ -268,15 +317,24 @@
       "0,0,0,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,2,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,2,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
-      "0,0,0,2,2,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,3,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,3,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,0,0,3,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,4,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,4,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,4,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,5,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,5,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,5,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,6,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,6,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,6,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,7,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,7,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,7,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,8,0,0:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,8,0,1,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
+      "0,0,0,8,0,1:main-container-external:0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "0,1,2,0,1,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"height\":{\"value\":{\"value\":\"32px\",\"important\":false},\"default\":{\"value\":\"47px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"width\":{\"value\":{\"value\":\"78px\",\"important\":false},\"default\":{\"value\":\"113px\",\"important\":false}}}}]",
       "main-container:0,0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
       "main-container:0,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"true\",\"parameters\":{}}]"
@@ -312,12 +370,6 @@
     "value": "Your Site Name",
     "dependencies": {
       "0,0,0,0,0,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
-    }
-  },
-  "index.ftd#msg": {
-    "value": "hello world",
-    "dependencies": {
-      "0,0,0,3,4:main-container-external:0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   }
 }</script>
@@ -524,203 +576,78 @@ body.fpm-dark .ft_md a:visited code {
 <div data-id="0,1,2,0,1,1:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(255,255,255,1); font-family: Lato-700; font-size: 16px; font-weight: 400; line-height: 22px; margin-bottom: auto; margin-left: 10px; margin-top: auto; text-align: left; white-space: nowrap" class="ft_md">Your Site Name</div></a></div>
 <div data-id="0,1,2,1:main" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 100%" class="ft_md"><div data-id="0,1,2,1,0:main" data-spacing="margin-left:30px" style="align-items: flex-start; align-self: flex-end; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: auto; white-space: initial; width: auto" class="ft_md"><a data-id="0,1,2,1,0,0:main" href="https://github.com/fifthtry/fpm-dev-en/" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-bottom: auto; margin-top: auto; min-width: 20px; white-space: initial; width: 20px" class="ft_md"><img alt="" data-id="main:root" src="images/github-light.svg" style="width: 100%"></a>
 <img alt="" data-id="0,1,2,1,0,1:main" src="images/light-mode.svg" onclick="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;toggle&quot;,&quot;target&quot;:&quot;fpm#dark-mode&quot;,&quot;parameters&quot;:{}}]', this)" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; height: 18px; margin-bottom: auto; margin-left: 30px; margin-top: auto; white-space: initial"></div></div></div>
-<div data-id="main-row:0,1,3:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="main-container:0,1,3,0:main" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; padding-top: 20px; white-space: initial; width: 100%" class="ft_md"><div data-ext-id="main-container-external:0:main" data-id="0,0,0:main-container-external:0:main" id="page-title-quickstart" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="main-row:0,1,3:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="main-container:0,1,3,0:main" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; padding-top: 20px; white-space: initial; width: 100%" class="ft_md"><div data-ext-id="main-container-external:0:main" data-id="0,0,0:main-container-external:0:main" id="how-to-configure-this-theme" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
 <div data-id="0,0,0,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
-<div data-id="0,0,0,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 46px; font-weight: 400; line-height: 46px; padding-bottom: 16px; padding-top: 8px; text-align: left; white-space: initial" class="ft_md">Page Title - Quickstart</div>
+<div data-id="0,0,0,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 46px; font-weight: 400; line-height: 46px; padding-bottom: 16px; padding-top: 8px; text-align: left; white-space: initial" class="ft_md">How to configure this theme</div>
 <div data-id="0,0,0,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 46px; font-weight: 400; line-height: 46px; padding-bottom: 16px; padding-top: 8px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
-<div data-id="0,0,0,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum nibh pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper. Praesent fringilla venenatis eros. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.</div>
-<div data-id="0,0,0,2:main-container-external:0:main" data-spacing="margin-top:10px" id="h1-title-level-1" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,2,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,2,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
-<div data-id="0,0,0,2,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
-<div data-id="0,0,0,2,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">H1 - Title level 1</div>
-<div data-id="0,0,0,2,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
-<div data-id="0,0,0,2,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"><code>Lorem</code> ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula ipsum, ut malesuada neque. Morbi mollis mi a commodo imperdiet. Donec pellentesque sed tellus eget consectetur. Nam ullamcorper ligula sit amet ligula pretium, nec fermentum <code>nibh</code> pretium. In malesuada metus id egestas ultricies. Proin lacinia diam non quam lacinia mollis. Sed condimentum pharetra facilisis.</div>
-<div data-id="0,0,0,2,2:main-container-external:0:main" id="h2-title-level-2" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-top: 10px; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,2,2,0:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,2,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,2,2,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 3px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
-<div data-id="0,0,0,2,2,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 3px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
-<div data-id="0,0,0,2,2,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; transform: translateX(7px) ; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,2,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato; font-size: 26px; font-weight: 400; line-height: 26px; padding-bottom: 15px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">H2 - Title level 2</div>
-<div data-id="0,0,0,2,2,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato; font-size: 26px; font-weight: 400; line-height: 26px; padding-bottom: 15px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
-<div data-id="0,0,0,2,2,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Nam ullamcorper ligula sit amet ligula pretium, nec fermentum <code>nibh</code> pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.</div>
-<div data-id="0,0,0,2,2,2:main-container-external:0:main" id="h3-title-level-3" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,2,2,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato; font-size: 21px; font-weight: 400; line-height: 30px; padding-bottom: 8px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">H3 - Title level 3</div>
-<div data-id="0,0,0,2,2,2,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Nam ullamcorper ligula sit amet ligula pretium, nec fermentum <code>nibh</code> pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.</div>
-<div data-id="0,0,0,2,2,2,2:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,2,2,2,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md">ftd file containing data</div>
-<div data-id="0,0,0,2,2,2,2,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">record person</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">name</span><span style="color:#65737e;">: </span><span style="color:#d08770;">caption
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">string
-</span><span style="color:#b48ead;">bio</span><span style="color:#65737e;">: </span><span style="color:#d08770;">optional body
+<div data-id="0,0,0,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Create config.ftd file:</div>
+<div data-id="0,0,0,2:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); display: none; font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="0,0,0,2,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">import</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">ft
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">import</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">fpm
 </span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">person amitu</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Amit Upadhyay
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Bangalore, India
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">Amit is the founder and CEO of FifthTry.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">He loves to code, and is pursuing his childhood goal of
-</span><span style="color:#c0c5ce;">becoming a professional starer of the trees.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">person list employees</span><span style="color:#65737e;">:
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">employees</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Ganesh Salunke
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Mumbai, India
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">Ganesh loves to UI.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">employees</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Arpita Jaiswal
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Lucknow, India
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-icon</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">images/side-logo.png
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-name</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Your Site Name
 </span></pre>
 </div>
-<div data-id="0,0,0,2,2,2,2,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">record person</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">name</span><span style="color:#65737e;">: </span><span style="color:#d08770;">caption
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">string
-</span><span style="color:#b48ead;">bio</span><span style="color:#65737e;">: </span><span style="color:#d08770;">optional body
+<div data-id="0,0,0,2,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">import</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">ft
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">import</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">fpm
 </span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">person amitu</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Amit Upadhyay
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Bangalore, India
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">Amit is the founder and CEO of FifthTry.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">He loves to code, and is pursuing his childhood goal of
-</span><span style="color:#c0c5ce;">becoming a professional starer of the trees.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">person list employees</span><span style="color:#65737e;">:
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">employees</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Ganesh Salunke
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Mumbai, India
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">Ganesh loves to UI.
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">employees</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Arpita Jaiswal
-</span><span style="color:#b48ead;">location</span><span style="color:#65737e;">: </span><span style="color:#d08770;">Lucknow, India
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-icon</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">images/side-logo.png
+</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-name</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Your Site Name
 </span></pre>
 </div></div>
-<div data-id="0,0,0,2,2,2,3:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"><p data-id="0,0,0,2,2,2,3,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>A normal paragraph, called as markdown.</p>
-</p>
-<p data-id="0,0,0,2,2,2,3,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>Nam ullamcorper ligula sit amet ligula pretium, nec fermentum <code>nibh</code> pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.</p>
-</p></div>
-<div data-id="0,0,0,2,2,2,4:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,2,2,2,4,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md">getting data out of ftd</div>
-<div data-id="0,0,0,2,2,2,4,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(serde::Deserialize)]
-</span><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">Employee {
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: String,
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">location</span><span style="color:#c0c5ce;">: String,
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">bio</span><span style="color:#c0c5ce;">: Option&lt;String&gt;
-</span><span style="color:#c0c5ce;">}
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> doc = ftd::p2::Document::from(&quot;</span><span style="color:#a3be8c;">some/id</span><span style="color:#c0c5ce;">&quot;, source, lib)?;
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> amitu: Employee = doc.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">amitu</span><span style="color:#c0c5ce;">&quot;)?;
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> employees: Vec&lt;Employee&gt; = doc.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">employees</span><span style="color:#c0c5ce;">&quot;)?;
-</span></pre>
-</div>
-<div data-id="0,0,0,2,2,2,4,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#c0c5ce;">#[</span><span style="color:#bf616a;">derive</span><span style="color:#c0c5ce;">(serde::Deserialize)]
-</span><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">Employee {
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: String,
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">location</span><span style="color:#c0c5ce;">: String,
-</span><span style="color:#c0c5ce;">    </span><span style="color:#bf616a;">bio</span><span style="color:#c0c5ce;">: Option&lt;String&gt;
-</span><span style="color:#c0c5ce;">}
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> doc = ftd::p2::Document::from(&quot;</span><span style="color:#a3be8c;">some/id</span><span style="color:#c0c5ce;">&quot;, source, lib)?;
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> amitu: Employee = doc.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">amitu</span><span style="color:#c0c5ce;">&quot;)?;
-</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> employees: Vec&lt;Employee&gt; = doc.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">employees</span><span style="color:#c0c5ce;">&quot;)?;
-</span></pre>
-</div></div>
-<div data-id="0,0,0,2,2,2,5:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Read about <a href="/data-modelling/">ftd’s data modelling capability</a> in detail.</div></div></div></div>
-<div data-id="0,0,0,3:main-container-external:0:main" data-spacing="margin-top:10px" id="ui-language" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,3,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,3,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,3:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-site-icon" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,3,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,3,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
 <div data-id="0,0,0,3,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
-<div data-id="0,0,0,3,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">UI Language</div>
+<div data-id="0,0,0,3,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.site-icon</code></div>
 <div data-id="0,0,0,3,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
-<div data-id="0,0,0,3,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div>
-<div data-id="0,0,0,3,2:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-top: 10px; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,2,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md">hello world ftd</div>
-<div data-id="0,0,0,3,2,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">string msg</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">hello world
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
+<div data-id="0,0,0,3,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Write your site icon into this.</div>
+<div data-id="0,0,0,3,2:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-top: 10px; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,2,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); display: none; font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="0,0,0,3,2,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-icon</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">images/site-logo.png
 </span></pre>
 </div>
-<div data-id="0,0,0,3,2,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">string msg</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">hello world
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
+<div data-id="0,0,0,3,2,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-icon</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">images/site-logo.png
 </span></pre>
 </div></div>
-<div data-id="0,0,0,3,3:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"><p data-id="0,0,0,3,3,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>This is a ftd file that defines a variable <code>msg</code> and uses it to shows
-“hello world” in the UI using <code>ftd.text</code> “component”.</p>
-</p>
-<p data-id="0,0,0,3,3,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><hr />
-</p></div>
-<div data-id="0,0,0,3,4:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; margin-top: 10px; text-align: left; white-space: initial" class="ft_md">hello world</div>
-<div data-id="0,0,0,3,5:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"><p data-id="0,0,0,3,5,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><hr />
-</p>
-<p data-id="0,0,0,3,5,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>Nam ullamcorper ligula sit amet ligula pretium, nec fermentum <code>nibh</code> pretium. Aenean feugiat euismod congue. Fusce viverra erat et sodales finibus. Integer porttitor neque vel nunc lobortis semper.</p>
-</p>
-<p data-id="0,0,0,3,5,2:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>Let’s see a slightly more complex layout:</p>
-</p></div>
-<div data-id="0,0,0,3,6:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-top: 10px; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,3,6,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); display: none; font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
-<div data-id="0,0,0,3,6,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.column</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">border-width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">1
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">id</span><span style="color:#65737e;">: </span><span style="color:#d08770;">outer
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">background-color</span><span style="color:#65737e;">: </span><span style="color:#d08770;">$ft.neutral-200
-</span><span style="color:#b48ead;">padding</span><span style="color:#65737e;">: </span><span style="color:#d08770;">10
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">container</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">outer
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">padding</span><span style="color:#65737e;">: </span><span style="color:#d08770;">10
-</span><span style="color:#b48ead;">border-top</span><span style="color:#65737e;">: </span><span style="color:#d08770;">1
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">align</span><span style="color:#65737e;">: </span><span style="color:#d08770;">center
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">We support **markdown** as well.
+<div data-id="0,0,0,3,3:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Site icon will be shown at top left corner of header, and vertically center to header links.</div>
+<div data-id="0,0,0,3,4:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; margin-top: 10px; padding-bottom: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="0,0,0,3,4,0:main-container-external:0:main" src="images/side-logo-info.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; padding-bottom: 15px; white-space: initial; width: 100%">
+<div data-id="0,0,0,3,4,1:main-container-external:0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato; font-size: 17px; font-weight: 400; margin-left: auto; margin-right: auto; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="0,0,0,3,4,2:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div></div>
+<div data-id="0,0,0,4:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-site-name" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,4,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,4,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,4,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,4,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
+<div data-id="0,0,0,4,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,4,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.site-name</code></div>
+<div data-id="0,0,0,4,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
+<div data-id="0,0,0,4,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Write your site name into this.</div>
+<div data-id="0,0,0,4,2:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; margin-top: 10px; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,4,2,0:main-container-external:0:main" style="background-color: rgba(58,64,78,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(220,220,220,1); display: none; font-family: Lato; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="0,0,0,4,2,1:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-name</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Your Site Name
 </span></pre>
 </div>
-<div data-id="0,0,0,3,6,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.column</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">border-width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">1
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">id</span><span style="color:#65737e;">: </span><span style="color:#d08770;">outer
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">background-color</span><span style="color:#65737e;">: </span><span style="color:#d08770;">$ft.neutral-200
-</span><span style="color:#b48ead;">padding</span><span style="color:#65737e;">: </span><span style="color:#d08770;">10
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">$msg
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">container</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">outer
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.row</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">padding</span><span style="color:#65737e;">: </span><span style="color:#d08770;">10
-</span><span style="color:#b48ead;">border-top</span><span style="color:#65737e;">: </span><span style="color:#d08770;">1
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#b48ead;">align</span><span style="color:#65737e;">: </span><span style="color:#d08770;">center
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ftd.text</span><span style="color:#65737e;">:
-</span><span style="color:#b48ead;">width</span><span style="color:#65737e;">: </span><span style="color:#d08770;">fill
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">We support **markdown** as well.
+<div data-id="0,0,0,4,2,2:main-container-external:0:main" style="background-color: rgba(43,48,59,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(77,77,77,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">ft.site-name</span><span style="color:#65737e;">: </span><span style="color:#a3be8c;">Your Site Name
 </span></pre>
 </div></div>
-<div data-id="0,0,0,3,7:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Which gets rendered into:</div>
-<div data-id="0,0,0,3,8:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"><p data-id="0,0,0,3,8,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>Most websites you come across can be created using this (or will be in the future).
-We have a DSL that picks elements from CSS, after simplifying things a little bit.</p>
-</p>
-<p data-id="0,0,0,3,8,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>As a goal we want <code>ftd</code> files to be renderable in the browser, as well as in other
-modes, like in Terminal using curses UI, natively on Mobile devices, Emacs,
-rendering from scratch using just C/assembly for low-powered devices and so on.</p>
-</p></div></div></div></div></div></div></div></div><style>
+<div data-id="0,0,0,4,3:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 10px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md">Site name will be shown after logo in the header section.</div>
+<div data-id="0,0,0,4,4:main-container-external:0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; margin-top: 10px; padding-bottom: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="0,0,0,4,4,0:main-container-external:0:main" src="images/side-name-info.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; padding-bottom: 15px; white-space: initial; width: 100%">
+<div data-id="0,0,0,4,4,1:main-container-external:0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato; font-size: 17px; font-weight: 400; margin-left: auto; margin-right: auto; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="0,0,0,4,4,2:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div></div>
+<div data-id="0,0,0,5:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-github" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,5,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,5,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,5,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,5,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
+<div data-id="0,0,0,5,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,5,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.github</code></div>
+<div data-id="0,0,0,5,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
+<div data-id="0,0,0,5,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div>
+<div data-id="0,0,0,6:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-site-url" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,6,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,6,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,6,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,6,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
+<div data-id="0,0,0,6,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,6,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.site-url</code></div>
+<div data-id="0,0,0,6,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
+<div data-id="0,0,0,6,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div>
+<div data-id="0,0,0,7:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-toc" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,7,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,7,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,7,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,7,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
+<div data-id="0,0,0,7,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,7,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.toc</code></div>
+<div data-id="0,0,0,7,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
+<div data-id="0,0,0,7,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div>
+<div data-id="0,0,0,8:main-container-external:0:main" data-spacing="margin-top:10px" id="ft-header-toc" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="dash-row:0,0,0,8,0:main-container-external:0:main" data-spacing="margin-left:7px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,8,0,0:main-container-external:0:main" data-spacing="margin-left:3px" style="align-items: flex-start; align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: auto; margin-left: 7px; margin-top: auto; white-space: initial" class="ft_md"><div data-id="0,0,0,8,0,0,0:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div>
+<div data-id="0,0,0,8,0,0,1:main-container-external:0:main" style="align-items: flex-start; align-self: center; background-color: rgba(189,191,202,1); border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 4px; justify-content: flex-start; margin-bottom: auto; margin-left: 3px; margin-top: auto; white-space: initial; width: 21px" class="ft_md"></div></div>
+<div data-id="0,0,0,8,0,1:main-container-external:0:main" data-spacing="margin-left:10px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 7px; white-space: initial; width: 100%" class="ft_md"><div data-id="0,0,0,8,0,1,0:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md"><code>ft.header-toc</code></div>
+<div data-id="0,0,0,8,0,1,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-700; font-size: 32px; font-weight: 400; line-height: 26px; padding-bottom: 18px; padding-top: 16px; text-align: left; transform: translateX(-7px) ; white-space: initial" class="ft_md">:</div></div></div>
+<div data-id="0,0,0,8,1:main-container-external:0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(10,26,31,1); display: none; font-family: Lato-300; font-size: 21px; font-weight: 400; line-height: 31px; margin-bottom: 21px; margin-top: 21px; padding-bottom: 8px; text-align: left; white-space: initial" class="ft_md"></div></div></div></div></div></div></div></div><style>
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;;
 font-style: italic;;
 font-weight: 400;;
