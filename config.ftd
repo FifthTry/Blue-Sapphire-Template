@@ -11,9 +11,9 @@ $processor$: toc
 
 - index.html
   Quickstart
-  - /configure/
+  -  /Blue-Sapphire-Template/configure/
     How to configure this theme
-  - /custom-toc/
+  - /Blue-Sapphire-Template/custom-toc/
     Creating a Page with Custom TOC
 
 
